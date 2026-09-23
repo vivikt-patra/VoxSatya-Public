@@ -1,0 +1,138 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing & Coverage
+.pytest_cache/
+.pytest-*/
+.coverage
+htmlcov/
+.hypothesis/
+.ruff_cache/
+.mypy_cache/
+
+# Audio Data & Media (do not commit raw datasets or trained weights)
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/README.md
+data/manifests/*
+!data/manifests/README.md
+!data/manifests/m07_external_asvspoof2019_la.json
+
+models/*
+!models/README.md
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.flac
+*.ogg
+*.mpeg
+test_audio/
+*.pt
+*.pth
+*.onnx
+*.bin
+*.tflite
+*.pkl
+
+# Gradle & Android
+.gradle/
+**/build/
+local.properties
+.tooling/
+captures/
+*.apk
+*.aab
+
+# Web Apps
+voxsatya-mobile-web/node_modules/
+voxsatya-mobile-web/dist/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local Dev & Environment Variables
+.env
+.env.local
+powershell.bat
+scratch/
+data/runtime/*.db*
+data/runtime/*.db-wal
+data/runtime/*.db-shm
+data/runtime/exports/*
+!data/runtime/exports/.gitkeep
+frontend/.next/
+frontend/node_modules/
+node_modules/
+**/.npm-cache/
+.vite/
+*.tsbuildinfo
+experiments/M14-a17/*.pt
+
+# Local/generated showcase exports
+sih-voice-defense-cockpit/
+sih-voice-defense-cockpit.zip
+backend/app/static/__manus__/
+
+# Local reference media and temporary exports
+data/reference_voices/
+voice/
+*.zip
+*.log
+*.pid
+
+# No root Node project; keep the frontend lockfile only
+/package-lock.json
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Internal dev/agent workflow files — never commit to any repo
+AI_HANDOFF.md
+memory.md
+task.md
+rules.md
+prd.md
+design.md
+modify.md
+commit_msg_*.txt
+
+# Internal SIH planning docs — private only
+SIH 2026.md
+PROJECT_STATE.md
+PROGRESS.md
+
+# Runtime output data — always local only
+data/runtime/detections_output.json
